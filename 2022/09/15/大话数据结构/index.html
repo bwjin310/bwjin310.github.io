@@ -6,14 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives: 2022 | Hexo</title>
+  <title>大话数据结构 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/2022/index.html">
+  <meta name="description" content="大话数据结构 1. 绪论 数据结构是一门研究非数值计算的程序设计问题中的操作对象，以及他们之间的关系和操作等相关问题的学科（程序设计 &#x3D; 数据结构 + 算法）  1.1 基本概念   概念 解释    数据 是描述客观事物的符号，是计算机中可以操作的对象，是能被计算机识别并输入给计算机处理的符号集合   数据元素 是组成数据的、有一定意义的基本单位，在计算机中通常作为整体处理，也被称为记录   数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="大话数据结构">
+<meta property="og:url" content="http://example.com/2022/09/15/%E5%A4%A7%E8%AF%9D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="大话数据结构 1. 绪论 数据结构是一门研究非数值计算的程序设计问题中的操作对象，以及他们之间的关系和操作等相关问题的学科（程序设计 &#x3D; 数据结构 + 算法）  1.1 基本概念   概念 解释    数据 是描述客观事物的符号，是计算机中可以操作的对象，是能被计算机识别并输入给计算机处理的符号集合   数据元素 是组成数据的、有一定意义的基本单位，在计算机中通常作为整体处理，也被称为记录   数">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-09-15T05:54:49.000Z">
+<meta property="article:modified_time" content="2022-09-15T05:56:20.675Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="data structure">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -148,36 +153,129 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-大话数据结构" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2022" class="archive-year">2022</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/09/15/%E5%A4%A7%E8%AF%9D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="archive-article-date">
-  	<time datetime="2022-09-15T05:54:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-09-15</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/09/15/%E5%A4%A7%E8%AF%9D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">大话数据结构</a>
+    <h1 class="article-title" itemprop="name">
+      大话数据结构
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2022/09/15/%E5%A4%A7%E8%AF%9D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="archive-article-date">
+  	<time datetime="2022-09-15T05:54:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-09-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="大话数据结构"><a href="#大话数据结构" class="headerlink" title="大话数据结构"></a>大话数据结构</h1><hr>
+<h1 id="1-绪论"><a href="#1-绪论" class="headerlink" title="1. 绪论"></a>1. 绪论</h1><ul>
+<li>数据结构是一门研究非数值计算的程序设计问题中的操作对象，以及他们之间的关系和操作等相关问题的学科（<code>程序设计 = 数据结构 + 算法</code>）</li>
+</ul>
+<h2 id="1-1-基本概念"><a href="#1-1-基本概念" class="headerlink" title="1.1 基本概念"></a>1.1 基本概念</h2><table>
+<thead>
+<tr>
+<th>概念</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>数据</td>
+<td>是描述客观事物的符号，是计算机中可以操作的对象，是能被计算机识别并输入给计算机处理的符号集合</td>
+</tr>
+<tr>
+<td>数据元素</td>
+<td>是组成数据的、有一定意义的基本单位，在计算机中通常作为整体处理，也被称为记录</td>
+</tr>
+<tr>
+<td>数据项</td>
+<td>一个数据元素由若干数据项组成，数据项是数据不可分割的最小单位</td>
+</tr>
+<tr>
+<td>数据对象</td>
+<td>是性质相同的数据元素的集合，是数据的子集</td>
+</tr>
+<tr>
+<td>数据结构</td>
+<td>是相互之间存在一种或多种特定关系的数据元素的集合</td>
+</tr>
+</tbody></table>
+<h2 id="1-2-逻辑结构与物理结构"><a href="#1-2-逻辑结构与物理结构" class="headerlink" title="1.2 逻辑结构与物理结构"></a>1.2 逻辑结构与物理结构</h2><ul>
+<li>逻辑结构（面向问题）<ul>
+<li>集合结构</li>
+<li>线性结构</li>
+<li>树形结构</li>
+<li>图形结构</li>
+</ul>
+</li>
+<li>物理结构：数据的逻辑结构在计算机中的存储形式（面向计算机）<ul>
+<li>顺序结构：把数据元素存放在地址连续的存储单元里，期数据间的逻辑关系和物理关系是一致的</li>
+<li>链式结构：数据元素存放在任意的存储单元里，指针式</li>
+</ul>
+</li>
+</ul>
+<h2 id="1-3-数据类型"><a href="#1-3-数据类型" class="headerlink" title="1.3 数据类型"></a>1.3 数据类型</h2><ul>
+<li>数据类型：是指一组性质相同的&#x3D;&#x3D;值&#x3D;&#x3D;的集合及在此定义在此集合的一些&#x3D;&#x3D;操作&#x3D;&#x3D;的总称</li>
+<li>抽象数据类型：一个数学模型及定义在该模型上的一组操作（eg.超级玛丽）</li>
+</ul>
+<hr>
+<h1 id="2-算法"><a href="#2-算法" class="headerlink" title="2. 算法"></a>2. 算法</h1><ul>
+<li>算法是解决特定问题求解步骤的描述，在计算机中表现为指令的优先序列，并且每条指令表示一个或多个操作。</li>
+<li>特性：<ul>
+<li>输入输出</li>
+<li>有穷性</li>
+<li>确定性：无二义性，相同的输入只能有确定的结果</li>
+<li>可行性</li>
+</ul>
+</li>
+<li>设计要求：<ul>
+<li>正确性</li>
+<li>可读性</li>
+<li>健壮性：当输入数据不合法时，算法也能有相应处理，而不是产生异常获莫名其妙的结果</li>
+<li>时间效率高和存储量低：大O记法<ul>
+<li>$O(1)&lt;O(logn)&lt;O(n)&lt;O(nlogn)&lt;O(n^2)&lt;O(n^3)&lt;O(2^n)&lt;O(n!)&lt;O(n^n)$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="3-线性表"><a href="#3-线性表" class="headerlink" title="3. 线性表"></a>3. 线性表</h1><ul>
+<li>线性表(List)：领个或多个数据元素的有限序列</li>
+</ul>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -189,7 +287,7 @@
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -202,44 +300,104 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2022/09/15/%E5%A4%A7%E8%AF%9D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/07/19/hello-world/" class="archive-article-date">
-  	<time datetime="2022-07-18T16:20:14.988Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-07-19</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2022/07/19/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/07/19/hello-world/">Hello World</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -262,8 +420,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
